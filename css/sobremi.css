@@ -45,14 +45,12 @@ img {
 }
 
 .info h1 {
-  color: #3a2a18;
   font-size: 3vw;
   font-size: 600;
   place-self: center;
 }
 
 .info p {
-  color: #3a2a18;
   font-size: clamp(1rem, 1.3vw, 1.2rem);
   line-height: 1.6;
 }
