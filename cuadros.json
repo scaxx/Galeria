@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titulo": "Horizonte Rojo",
+    "descripcion": "Acrílico sobre lienzo, inspirado en atardeceres costeros.",
+    "precio": 180,
+    "imagen": "./assets/cuadro_01.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Silencio Azul",
+    "descripcion": "Composición abstracta en tonos fríos.",
+    "precio": 220,
+    "imagen": "./assets/cuadro_02.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Raíces",
+    "descripcion": "Texturas orgánicas y colores tierra.",
+    "precio": 150,
+    "imagen": "./assets/cuadro_03.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Horizonte Rojo",
+    "descripcion": "Acrílico sobre lienzo, inspirado en atardeceres costeros.",
+    "precio": 180,
+    "imagen": "./assets/cuadro_01.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Silencio Azul",
+    "descripcion": "Composición abstracta en tonos fríos.",
+    "precio": 220,
+    "imagen": "./assets/cuadro_02.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Raíces",
+    "descripcion": "Texturas orgánicas y colores tierra.",
+    "precio": 150,
+    "imagen": "./assets/cuadro_03.jpg"
+  }
+]
