@@ -1,15 +1,18 @@
 .sobremi {
-  padding: 3vw;
   display: flex;
   place-items: center;
-  gap: 8vw;
+  gap: 4vw;
+  padding: clamp(15px, 3vw, 40px);
+  box-sizing: border-box;
+  width: 100%;
 }
 
 img {
   border-radius: 100%;
-  width: 30vw;
+  width: 20vw;
   height: auto;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  flex-shrink: 0;
 }
 
 .info {
@@ -17,15 +20,19 @@ img {
   flex-direction: column;
   gap: 0.5vh;
   justify-content: center;
+
+  min-width: 0;
+  flex: 1;
 }
 
 .info h1 {
   font-size: 3vw;
-  font-size: 600;
+  font-weight: 600;
   place-self: center;
 }
 
 .info p {
   font-size: clamp(1rem, 1.3vw, 1.2rem);
   line-height: 1.6;
+  overflow-wrap: break-word;
 }
