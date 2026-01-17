@@ -5,23 +5,54 @@ body {
   font-family: "Inconsolata";
   background-color: #f0ede6;
   color: #3a2a18;
+  height: 100vh;
+  overflow: hidden;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 3vh;
   display: flex;
   justify-content: center;
   gap: 15vw;
   background-color: #c9b89b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 a {
   color: #3a2a18;
-  font-size: 3vh;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
   font-weight: 600;
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+}
+
+main {
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 8vh);
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e6dfcd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bba77f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
 }

@@ -55,21 +55,3 @@
 .vermas:hover {
   background-color: #bba77f;
 }
-
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #e6dfcd;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #bba77f;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  cursor: pointer;
-}
