@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
 
-* {
-  font-family: "Inconsolata";
-}
-
 body {
   margin: 0;
+  font-family: "Inconsolata";
   background-color: #f0ede6;
   color: #3a2a18;
 }
@@ -21,8 +18,8 @@ nav {
 
 a {
   color: #3a2a18;
-  font-size: large;
-  font-weight: bolder;
+  font-size: 3vh;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -61,14 +58,15 @@ a {
 }
 
 .precio {
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .vermas {
   background-color: #c9b89b;
   color: #3a2a18;
   font-size: 1rem;
-  font-weight: bolder;
+  font-weight: 500;
+  font-family: inherit;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 10px;
