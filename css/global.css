@@ -31,6 +31,26 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: #c9b89b;
+  color: #3a2a18;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  width: 120px;
+  margin: 0.5rem auto;
+  cursor: pointer;
+  transition: background-color 2s ease;
+}
+
+button:hover {
+  background-color: #bba77f;
+}
+
 main {
   position: fixed;
   top: 8vh;
