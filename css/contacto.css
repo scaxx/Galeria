@@ -1,0 +1,35 @@
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto {
+    width: 60%;
+    max-width: 700px;
+    min-width: 320px;
+    background-color: #c9b89b;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contacto input,
+#contacto textarea {
+    background-color: #ede7db;
+    font-family: inherit;
+    padding: 0.7rem;
+    color: #3a2a18;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+#contacto textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+

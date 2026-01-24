@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marisa Ramírez | Información de contacto</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
     <nav>
@@ -11,8 +13,13 @@
         <a href="galeria.html">Galería</a>
         <a href="contacto.html">Contáctame</a>
     </nav>
-    <main>
-        Hola
+    <main id="formulario">
+        <form id="contacto">
+            <h1 id="titulo">Formulario de contacto</h1>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+            <textarea id="consulta" placeholder="Escribe tu consulta" required></textarea>
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
     </main>
 </body>
 </html>
