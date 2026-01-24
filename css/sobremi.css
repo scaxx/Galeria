@@ -20,7 +20,6 @@ img {
   flex-direction: column;
   gap: 0.5vh;
   justify-content: center;
-
   min-width: 0;
   flex: 1;
 }
