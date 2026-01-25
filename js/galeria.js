@@ -13,10 +13,18 @@ fetch("cuadros.json")
                 <p>${cuadro.descripcion}</p>
                 <p>Precio: <span class="precio">$${cuadro.precio}</span></p>
             </section>
-            <button class="vermas">Ver más</button>
+            <button class="vermas" data-id=${cuadro.id}>Ver más</button>
             `;
 
             galeria.appendChild(articulo);
+        });
+
+        galeria.addEventListener("click", (e) => {
+            const boton = e.target.closest(".vermas");
+            if (!boton) return;
+
+            const id = boton.dataset.id;
+            window.location.href = `pintura.html?id=${id}`;
         });
     })
     .catch(error => {
