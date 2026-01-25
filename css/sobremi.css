@@ -1,6 +1,6 @@
 .sobremi {
   display: flex;
-  place-items: center;
+  align-items: center;
   gap: 4vw;
   padding: clamp(15px, 3vw, 40px);
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 img {
   border-radius: 100%;
-  width: 20vw;
+  width: 30vw;
   height: auto;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   flex-shrink: 0;
@@ -19,19 +19,30 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0.5vh;
-  justify-content: center;
   min-width: 0;
   flex: 1;
 }
 
 .info h1 {
-  font-size: 3vw;
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 600;
-  place-self: center;
 }
 
 .info p {
   font-size: clamp(1rem, 1.3vw, 1.2rem);
   line-height: 1.6;
   overflow-wrap: break-word;
+}
+
+@media (max-width: 700px) {
+  .sobremi {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    width: 50vw;
+  }
+  .info h1 {
+    place-self: center;
+  }
 }
