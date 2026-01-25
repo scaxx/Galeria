@@ -13,11 +13,11 @@ form.addEventListener("submit", function (e) {
     const url = `https://wa.me/${tel}?text=${texto}`;
 
     window.open(url, "_blank");
+    overlay.classList.add("activo");   
     form.reset();
-    overlay.classList.remove("oculto");
 
 });
 
 cerrar.addEventListener("click", () => {
-    overlay.classList.add("oculto");
+    overlay.classList.remove("activo");
 });
