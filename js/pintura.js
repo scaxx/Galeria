@@ -33,10 +33,10 @@ function renderPintura(cuadros) {
     <article class="pintura">
       <img src="${cuadro.imagen}" alt="${cuadro.titulo}">
       <section class="info">
-        <h1>${cuadro.titulo}</h1>
-        <p>${cuadro.descripcion}</p>
-        <p class="precio">$${cuadro.precio}</p>
-        <a href="galeria.html">← Volver a la galería</a>
+        <h1 class="titulo">${cuadro.titulo}</h1>
+        <p class="descripcion">${cuadro.descripcion}</p>
+        <p class="precio"><span>Precio: $${cuadro.precio}</span></p>
+        <button href="galeria.html">Volver</button>
       </section>
     </article>
   `;
