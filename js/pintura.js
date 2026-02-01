@@ -31,13 +31,14 @@ function renderPintura(cuadros) {
 
     container.innerHTML = `
     <article class="pintura">
-      <img src="${cuadro.imagen}" alt="${cuadro.titulo}">
-      <section class="pintura-info">
-        <h1 class="titulo">${cuadro.titulo}</h1>
-        <p class="descripcion">${cuadro.descripcion}</p>
-        <p class="precio"><span>Precio: $${cuadro.precio}</span></p>
-        <button href="galeria.html">Volver</button>
-      </section>
+        <img src="./assets/flecha.png" alt="Flecha hacia atrás" class="atras">
+        <img src="${cuadro.imagen}" alt="${cuadro.titulo}" class="cuadro">
+        <section class="pintura-info">
+            <h1 class="titulo">${cuadro.titulo}</h1>
+            <p class="descripcion">${cuadro.descripcion}</p>
+            <p class="precio"><span>Precio: $${cuadro.precio}</span></p>
+            <button href="galeria.html">Volver</button>
+        </section>
     </article>
   `;
 

@@ -9,13 +9,19 @@
     gap: 3rem;
     justify-content: center;
     align-items: center;
+    width: 75vw;
+    height: 70vh;
     background-color: #d8cdb1;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     border-radius: 15px;
     padding: 2.5rem;
 }
 
-.pintura img {
+.atras{
+    height: 20px;
+}
+
+.cuadro {
     height: 70vh;
     border-radius: 15px;
 }
@@ -25,5 +31,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    gap: 6.5rem;
 }
+
+.pintura-info p {
+    font-size: 1.2rem;
+}
+
