@@ -32,7 +32,7 @@ function renderPintura(cuadros) {
     container.innerHTML = `
     <article class="pintura">
       <img src="${cuadro.imagen}" alt="${cuadro.titulo}">
-      <section class="info">
+      <section class="pintura-info">
         <h1 class="titulo">${cuadro.titulo}</h1>
         <p class="descripcion">${cuadro.descripcion}</p>
         <p class="precio"><span>Precio: $${cuadro.precio}</span></p>

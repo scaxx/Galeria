@@ -1,36 +1,29 @@
 #container {
     display: flex;
     justify-content: center;
-    background-color: #d8cdb1;
-    border-radius: 15px;
-    width: 70%;
-    height: 65%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 2rem;
-    margin: 5rem 14rem;
+    align-items: center;
 }
 
 .pintura {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin: 0;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8cdb1;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    padding: 2.5rem;
 }
 
-img {
-    width: 80%;
-    height: auto;
+.pintura img {
+    height: 70vh;
+    border-radius: 15px;
 }
 
-.info {
+.pintura-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    background-color: red;
-}
-
-span {
-    font-weight: 600;
+    gap: 7rem;
 }
