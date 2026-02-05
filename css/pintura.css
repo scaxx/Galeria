@@ -17,13 +17,10 @@
     padding: 2.5rem;
 }
 
-.atras{
-    height: 20px;
-}
-
 .cuadro {
     height: 70vh;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .pintura-info {
@@ -38,3 +35,36 @@
     font-size: 1.2rem;
 }
 
+span {
+    font-weight: 600;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: #c9b89b;
+    color: #3a2a18;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    transition: background-color 2s ease;
+}
+
+.volver img {
+    height: 0.8rem;
+}
