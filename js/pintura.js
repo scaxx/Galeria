@@ -44,4 +44,13 @@ function renderPintura(cuadros) {
     </article>
   `;
 
+const meInteresa = document.querySelector(".me-interesa");
+
+meInteresa.addEventListener("click", () => {
+    const titulo = encodeURIComponent(cuadro.titulo);
+    const url = encodeURI(window.location.href);
+
+    window.location.href = `contacto.html?obra=${titulo}&url=${url}`;
+});
+
 }
