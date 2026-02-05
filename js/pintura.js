@@ -2,6 +2,11 @@ const params = new URLSearchParams(window.location.search);
 const id = Number(params.get("id"), 10);
 
 const container = document.getElementById("container");
+const modal = document.getElementById("pintura-contacto");
+const inputNombre = document.getElementById("pintura-cliente");
+const inputMensaje = document.getElementById("pintura-mensaje");
+const form = document.getElementById("form-pintura");
+const btnCerrar = document.getElementById("form-cerrar");
 
 const cache = localStorage.getItem("cuadros");
 
@@ -47,10 +52,36 @@ function renderPintura(cuadros) {
 const meInteresa = document.querySelector(".me-interesa");
 
 meInteresa.addEventListener("click", () => {
-    const titulo = encodeURIComponent(cuadro.titulo);
-    const url = encodeURI(window.location.href);
+    modal.classList.add("activo");
 
-    window.location.href = `contacto.html?obra=${titulo}&url=${url}`;
+    const urlActual = window.location.href;
+
+    inputMensaje.value = `Hola, me interesa la obra "${cuadro.titulo}".
+¿Podrías darme más información?
+
+Link: ${urlActual}`;
 });
 
 }
+
+btnCerrar.addEventListener("click", () => {
+    modal.classList.remove("activo");
+});
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("activo");
+    } 
+});
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = inputNombre.value.trim();
+    const mensaje = inputMensaje.value.trim();
+
+    alert("Mensaje enviado correctamente");
+
+    form.reset();
+    modal.classList.remove("activo"); 
+});
